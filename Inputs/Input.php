@@ -8,14 +8,16 @@ abstract class Input {
     abstract protected function _renderSetting();
 
     public function __construct($name, $label, $initVal) {
-        //
+        $this->_name = $name;
+        $this->_label = $label;
+        $this->_initVal = $initVal;
     }
 
     /**
      * returns the name of this input
      */
     public function name() {
-        // TODO
+        return $this->_name;
     }
 
 
@@ -24,13 +26,16 @@ abstract class Input {
      *  html form element is displayed (such as a text box, radio button, select, etc)
      */
     public function render() {
-        // TODO
+        return $this->_renderSetting();
     }
 
     /**
      * returns the current value managed by this input
      */
     public function getValue() {
-        // TODO
+        if (isset($_POST[$this->_name])) {
+            return $_POST[$this->_name];
+        }
+        return $this->_initVal;
     }
 }
