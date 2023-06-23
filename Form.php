@@ -46,7 +46,7 @@ class Form {
         foreach ($this->_inputs as $input) {
             $html .= '<div>' . $input->render() . '</div>';
         }
-        $html .= '<button type="submit">Submit</button>';
+        $html .= '<div><label></label><span><button type="submit">SUBMIT</button></span></div>';
         $html .= '</form>';
         echo $html;
     }
