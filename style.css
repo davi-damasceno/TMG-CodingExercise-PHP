@@ -42,3 +42,10 @@ form button {
     font-weight: bold;
     text-shadow: 0 -1px 1px black;
 }
+.error {
+    display: block;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    color: red;
+}
