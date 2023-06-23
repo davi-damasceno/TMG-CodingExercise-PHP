@@ -14,7 +14,7 @@ class TextInput extends Input {
 
     protected function _renderSetting() {
         // Implementação para renderizar a tag de input de texto
-        $html = '<label for="' . $this->_name . '">' . $this->_label . '</label>';
+        $html = '<label for="' . $this->_name . '">' . $this->_label . ':</label>';
         $html .= '<input type=text name="' . $this->_name . '" value="' . $this->_initVal . '">';
         return $html;
     }   
