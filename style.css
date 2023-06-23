@@ -1,0 +1,12 @@
+/* Estilos CSS para o formulário */
+form {
+/* Estilos do formulário */
+background-color: blue;
+border: 1px red solid;
+border-radius: 10px;
+}
+
+input {
+/* Estilos dos campos de entrada */
+color: red
+}
