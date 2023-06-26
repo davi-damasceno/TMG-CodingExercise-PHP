@@ -14,3 +14,13 @@ Added a php file handler using [mod_proxy_fcgi module](https://httpd.apache.org/
 ```
 
 Also, I overwrote apache's default directory to reference the directory with my local github repository for this exercise. Notice that this configurations it's just for development, the actual server will be using the latest php version.
+
+## Development considerations
+
+A new folder was created to contain the new TextInput class and the abstract Input class in order to centralize all inputs on a single place.
+
+I have added a arbitrary validation on each textInput field in order to guarantee that the text has at least 3 characters.
+
+The Sample.php file was updated to link to the styles.css file in order to make all stylization
+
+I also have created a dockerfile to use the latest PHP file. To check the current PHP version, I've created the phpInfo.php file to retrieve the `phpinfo()` information.
