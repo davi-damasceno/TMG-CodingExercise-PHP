@@ -13,7 +13,7 @@ Added a php file handler using [mod_proxy_fcgi module](https://httpd.apache.org/
 </FilesMatch>
 ```
 
-Also, I overwrote apache's default directory to reference the directory with my local github repository for this exercise. Notice that this configurations it's just for development, the actual server will be using the latest php version.
+Also, I overwrote apache's default directory to reference the directory with my local github repository for this exercise. Notice that this configurations it's just for **MY** development, the actual server will be using the latest php version. So, don't worry about it.
 
 ## Development considerations
 
