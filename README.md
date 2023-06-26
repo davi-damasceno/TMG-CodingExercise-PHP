@@ -24,3 +24,14 @@ I have added a arbitrary validation on each textInput field in order to guarante
 The Sample.php file was updated to link to the styles.css file in order to make all stylization
 
 I also have created a dockerfile to use the latest PHP file. To check the current PHP version, I've created the phpInfo.php file to retrieve the `phpinfo()` information.
+
+## How to execute
+
+Run this docker command to build and run the docker container of this test:
+```
+docker run --rm -it -p 9090:80 $(docker build -q .)
+```
+
+If there is a process using the 9090 port, feel free to change it =]
+
+The application should be accessible on the URL: http://localhost:9090/Sample.php
