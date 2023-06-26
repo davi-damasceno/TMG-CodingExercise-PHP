@@ -13,7 +13,6 @@ class TextInput extends Input {
     }
 
     protected function _renderSetting() {
-        // Implementação para renderizar a tag de input de texto
         $html = '<label for="' . $this->_name . '">' . $this->_label . ':';
         if(!$this->validate()){
             $html .= '<br/><span class="error">Invalid input</span>';
